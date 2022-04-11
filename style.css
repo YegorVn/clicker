@@ -11,8 +11,6 @@ html{
     padding:0;
     width: 100%;
     height: 100%;
-    position: fixed;
-    
 }
 
 .anim-test{
@@ -36,15 +34,41 @@ html{
 }
 
 .panel button{
-    background: black;
-    padding: 0.5rem;
+    padding: 3rem 1rem 3rem 1rem;
     cursor: pointer;
     position: relative;
     display: block;
     z-index: 2;
-    color: var(--near-white);
     width: fit-content;
     height: fit-content;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.inactive-multiply-buff{
+    border: 1px solid rgb(99, 99, 99);
+    background: black;
+    color: white;
+}
+
+.inactive-plus-buff{
+    border: 1px solid rgb(99, 99, 99);
+    background: black;
+    color: white;
+}
+
+.active-plus-buff{
+    border: 3px solid rgb(255, 55, 55);
+    background: rgb(112, 0, 0);
+    color: rgb(173, 173, 173);
+}
+
+.inactive-plus-buff:active{
+    border: 1px solid rgb(99, 99, 99);
+}
+
+.active-plus-buff:active{
+    border: 3px solid rgb(255, 85, 85) !important;
 }
 
 .panel-right{
@@ -65,15 +89,23 @@ html{
 .score{
     user-select: none;
     position: absolute;
-    top: 0;
+    top: 9rem;
     left: 0;
     right: 0;
     bottom: 0;
-    width: fit-content;
-    height: fit-content;
-    margin: 9rem auto 0 auto;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    margin: 0rem auto 0 auto;
     color:  var(--near-white);
-    font-size: 4rem;
+    font-size: 3rem;
+}
+
+.score div{
+    width: 30px;
+    display: block;
+    height: fit-content;
 }
 
 .ship{
