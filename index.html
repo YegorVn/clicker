@@ -1,46 +1,99 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nanum+Gothic:wght@400;700;800&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nanum+Gothic:wght@400;700;800&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <title>A Basic HTML5 Template</title>
 </head>
 
 <body>
-    <canvas id="canvas" class="canvas"></canvas>
-    <div class="sidebar"></div>
-      <div id="score" class="score">
-        <div id="score__1">0</div>
-        <div id="score__2">0</div>
-        <div id="score__3">0</div>
-        <div id="score__4">,</div>
-        <div id="score__5"></div>
-        <div id="score__6">0</div>
-        <div id="score__7">0</div>
-        <div id="score__8">0</div>
-        <div id="score__9">,</div>
-        <div id="score__10"></div>
-        <div id="score__11">0</div>
-        <div id="score__12">0</div>
-        <div id="score__13">0</div>
-      </div>
-    <div class="panel-right panel">
-      <button id="multiply-buff" class="inactive-multiply-buff">x1</button>
+  <canvas id="canvas" class="canvas"></canvas>
+  <div class="sidebar"></div>
+  <div id="distance" class="distance">
+    <!-- <span id="distance__annotation">miles passed:</span> -->
+    <div id="distance__1">0</div>
+    <div id="distance__2">0</div>
+    <div id="distance__3">0</div>
+    <div id="distance__4">,</div>
+    <div id="distance__5"></div>
+    <div id="distance__6">0</div>
+    <div id="distance__7">0</div>
+    <div id="distance__8">0</div>
+    <div id="distance__9">,</div>
+    <div id="distance__10"></div>
+    <div id="distance__11">0</div>
+    <div id="distance__12">0</div>
+    <div id="distance__13">0</div>
+    <div id="distance__14">,</div>
+    <div id="distance__15"></div>
+    <div id="distance__16">0</div>
+    <div id="distance__17">0</div>
+    <div id="distance__18">0</div>
+    <div id="distance__19">,</div>
+    <div id="distance__20"></div>
+    <div id="distance__21">0</div>
+    <div id="distance__22">0</div>
+    <div id="distance__23">0</div>
+  </div>
+  <div id="score" class="score">
+    <div id="score__1">0</div>
+    <div id="score__2">0</div>
+    <div id="score__3">0</div>
+    <div id="score__4">,</div>
+    <div id="score__5"></div>
+    <div id="score__6">0</div>
+    <div id="score__7">0</div>
+    <div id="score__8">0</div>
+    <div id="score__9">,</div>
+    <div id="score__10"></div>
+    <div id="score__11">0</div>
+    <div id="score__12">0</div>
+    <div id="score__13">0</div>
+  </div>
+  <div id="score-small" class="score-small">
+    <div id="score-small__1">0</div>
+    <div id="score-small__2">0</div>
+    <div id="score-small__3">0</div>
+    <div id="score-small__4">,</div>
+    <div id="score-small__5"></div>
+    <div id="score-small__6">0</div>
+    <div id="score-small__7">0</div>
+    <div id="score-small__8">0</div>
+    <div id="score-small__9">,</div>
+    <div id="score-small__10"></div>
+    <div id="score-small__11">0</div>
+    <div id="score-small__12">0</div>
+    <div id="score-small__13">0</div>
+  </div>
+  <div class="panel-right panel">
+    <button id="multiply-buff" class="inactive-multiply-buff panel__buff">x1</button>
+  </div>
+  <div class="panel-left panel">
+    <div id="vechicle-list" class="inactive-vechicle-list vechicle-list">
+      <div class="vechicle-list__vechicle vechicle-list__vechicle-inactive" id="vechicle__0" data-title="Софийский собор">1</div>
+      <div class="vechicle-list__vechicle vechicle-list__vechicle-inactive" id="vechicle__1">2</div>
+      <div class="vechicle-list__vechicle vechicle-list__vechicle-inactive" id="vechicle__2">333333</div>
+      <div class="vechicle-list__vechicle vechicle-list__vechicle-inactive" id="vechicle__3">333333</div>
+      <div class="vechicle-list__vechicle vechicle-list__vechicle-inactive" id="vechicle__4">333333</div>
     </div>
-    <div class="panel-left panel">
-      <button id="plus-buff" class="inactive-plus-buff">+1</button>
+    <button id="vechicle-list-button" class="inactive-vechicle-list-button vechicle-list-button"></button>
+    <button id="plus-buff" class="inactive-plus-buff panel__buff plus-buff"></button>
+  </div>
+  <button class="ship-notclicked ship" id="ship">
+    <div class="ship__image ship-notgoing" id="ship__image">
     </div>
-    <button class="ship-notclicked ship" id="ship">
-        <div class="ship__image ship-notgoing" id="ship__image">
-        </div>
-    </button>
-    
-    
-    <script src="./index.js"></script>
+  </button>
+
+
+  <script src="./index.js"></script>
 </body>
+
 </html>
